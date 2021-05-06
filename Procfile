@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run price_drop_alerter.py
+web: sh setup.sh && streamlit run sentiment_analysis.py
