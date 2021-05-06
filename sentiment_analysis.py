@@ -32,7 +32,6 @@ def build_dataframe(url):
     st.error("Error: Enter the movie name correctly")
 
 
-
 def get_review_url(movie_name):
   html_page = requests.get("https://www.imdb.com/find?q="+movie_name+"&ref_=nv_sr_sm")
   soup = BeautifulSoup(html_page.content)
