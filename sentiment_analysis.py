@@ -47,9 +47,9 @@ def get_review_url(movie_name):
       pass
 
   st.subheader("Copy the exact name of the movie from the search list of movies\n")
-  url_key=st.text_input(" ")
   for key,values in dic.items():
     st.write(key)
+  url_key=st.text_input(" ")
   try:
     url=dic[url_key]
     data=build_dataframe(url)
